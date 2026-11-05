@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { User } from './users.model.js';
+import { User } from './entity/users.entity.js';
 import { CreateUserPayload } from './dto/createuser.dto.js';
 import { randomUUID } from 'crypto';
 
