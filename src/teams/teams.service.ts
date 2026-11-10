@@ -26,7 +26,7 @@ export class TeamsService {
     try {
       await this.teamModel.create({
         name: createTeamDto.name,
-        // team_id: crypto.randomUUID(),
+        team_id: crypto.randomUUID(),
       });
     } catch (e) {
       if (e instanceof UniqueConstraintError) {
